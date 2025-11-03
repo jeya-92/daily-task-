@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setInterval Example</title>
+</head>
+<body>
+
+  <h1>Set Interval</h1>
+  <button onclick="setInterval(timeout, 5000)">Submit</button>
+
+  <div id="output"></div>
+
+  <script>
+    function timeout() {
+      
+      const div = document.getElementById("output");
+      div.innerHTML += "Timeout ";
+    }
+  </script>
+
+</body>
+</html>

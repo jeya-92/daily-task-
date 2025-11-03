@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setTimeout Example</title>
+</head>
+<body>
+
+  <h2 id="output"></h2>
+  <button onclick="setTimeout(timeout, 5000)">Submit</button>
+
+  <script>
+    function timeout() {
+      document.getElementById("output").innerText = "Hello World!";
+    }
+
+    function start() {
+      document.getElementById("output").innerText = "Started...";
+      setTimeout(timeout, 7000);
+    }
+  </script>
+
+</body>
+</html>
